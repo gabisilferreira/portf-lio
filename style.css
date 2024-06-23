@@ -1,0 +1,225 @@
+
+/*ESTILO GERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;     
+}
+
+body{
+    background-color: #000;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+  display: flex;
+}
+
+h2.titulo{
+  color: #fff;
+  font-size: 38px;
+  text-align: center;
+}
+
+h2.titulo span{
+  color: #FF8E8F;
+}
+
+/* ESTILO DO CABEÇALHO */
+
+header{
+   padding: 40px  4%; 
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header a{
+    color: #7d7d7d;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+.btn_contato button{
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #FF8E8F;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.interface .logo img{
+  height: 300px;
+}
+
+/*PARA COLORIR DE BRANCO  E DEIXAR COM ZOOM O LINK QUANDO PASSA O MOUSE POR CIMA*/
+header a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+
+/*DEIXA O BOTÃO COM ZOOM*/
+.btn_contato button:hover{
+  box-shadow: 0 px 0 px 8px #bc1c1e;
+  transform: scale(1.05);
+}
+
+
+
+/*ESTILO TOPO DO SITE*/
+
+section.topo-do-site{
+  padding: 40px 4%;
+}
+
+
+section.topo-do-site .flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;/*ESPAÇAMENTO*/
+}
+
+.topo-do-site h1{
+  color: #fff;
+  font-size: 42px;
+  line-height: 40px;
+  margin: 0 0 40px;
+}
+
+.topo-do-site .txt-topo-do-site h1 span{
+  color: #FF8E8F;
+}
+
+.topo-do-site p {
+  color: #fff;
+  margin: 0 0 40px; /* Margem inferior ajustada para não ficar muito colado na imagem */
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: left;
+}
+
+.topo-do-site .img-topo-site img{
+  height: 600px;
+  float: right;
+  position: relative;
+  animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+
+@keyframes flutuar{
+  0%{
+    top: 0;
+  }
+  100%{
+    top:30px;
+  }
+}
+
+/*ESTILOS DAS ESPECIALIDADES*/
+section.especialidades{
+  padding: 20px 4%;
+}
+
+section.especialidades .flex{
+  gap: 60px;
+}
+.especialidades .especialidades-box{
+  color:#fff;
+  padding: 40px;
+  border-radius: 40px;
+  margin-top: 45px;
+  transition: .2s;
+}
+
+.especialidades .especialidades-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ffffff79;
+}
+
+
+.especialidades .especialidades-box i{
+  font-size: 70px;
+  color:#FF8E8F
+}
+
+.especialidades .especialidades-box h3{
+  font-size: 28px;
+  margin: 15px 0;
+}
+
+
+/*ESTILO PORTFOLIO*/
+section.portfolio{
+  padding: 80px 4%;
+  box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+section.portfolio .flex{
+  justify-content: space-around;
+  margin-top: 60px;
+}
+
+.img-port{
+  width: 360px;
+  height: 460px;
+  background-size: cover;
+  background-position: 100% 0%; 
+  transition: 8s;
+  cursor: pointer;
+  border-radius: 40px;
+  position: relative;
+}
+
+.img-port.img-port:hover{
+  background-position: 80% 80%; 
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 600;
+  background-color: #000000b8;
+  color: #fff;
+  opacity: 0;
+  transition: .5s;
+
+}
+
+.overlay:hover{
+  opacity: 1;
+}
+
+
+
